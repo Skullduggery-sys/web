@@ -1,149 +1,15 @@
 {% extends "layouts/base.html" %}
 
 {% block title %}
-    <div class="d-flex justify-start align-items-center gap-3">
-        <h1>Tag: Best Ed project 2011</h1>
-    </div>
+<div class="d-flex justify-start align-items-center gap-3">
+    <h1>Tag: Best Ed project 2011</h1>
+</div>
 {% endblock %}
 
 {% block content %}
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-2">
-                        <div class="d-flex justify-content-center mt-2">
-                            <img src="../static/image.png" class="img-fluid justify-content-end rounded-start"
-                                 alt="..." height="100px;">
-                        </div>
-                        <div class="d-flex justify-content-center mt-4">
-                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                <button type="button" class="btn btn-success">↑</button>
-                                <button type="button" class="btn btn-white">1</button>
-                                <button type="button" class="btn btn-danger">↓</button>
-                            </div>
-                        </div>
+    {% for question in questions %}
+        {% include "layouts/question.html" with item=question %}
+    {% endfor %}
 
-                    </div>
-                    <div class="col-md-10">
-                        <div class="card-body">
-                            <h5><a href="...">Card title</a></h5>
-                            <div class="overflow-auto" style="height:150px;">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                deserunt mollit anim id est laborum.
-                            </div>
-                            <div class="d-flex justify-content-between">
-                                <a href="">Answers (44)</a>
-                                <div class="justify-content-start gap-3">
-                                    <span>Tags:</span>
-                                    <a href="...">Tag</a>
-                                    <a href="...">Tag</a>
-                                    <a href="...">Tag</a>
-                                    <a href="...">Tag</a>
-                                </div>
-
-
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-2">
-                        <div class="d-flex justify-content-center mt-2">
-                            <img src="../static/image.png" class="img-fluid justify-content-end rounded-start"
-                                 alt="..." height="100px;">
-                        </div>
-                        <div class="d-flex justify-content-center mt-4">
-                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                <button type="button" class="btn btn-success">↑</button>
-                                <button type="button" class="btn btn-white">1</button>
-                                <button type="button" class="btn btn-danger">↓</button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-10">
-                        <div class="card-body">
-                            <h5><a href="...">Card title</a></h5>
-                            <div class="overflow-auto" style="height:150px;">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                deserunt mollit anim id est laborum.
-                            </div>
-                            <div class="d-flex justify-content-between">
-                                <a href="">Answers (44)</a>
-                                <div class="justify-content-start gap-3">
-                                    <span>Tags:</span>
-                                    <a href="...">Tag</a>
-                                    <a href="...">Tag</a>
-                                    <a href="...">Tag</a>
-                                    <a href="...">Tag</a>
-                                </div>
-
-
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-2">
-                        <div class="d-flex justify-content-center mt-2">
-                            <img src="../static/image.png" class="img-fluid justify-content-end rounded-start"
-                                 alt="..." height="100px;">
-                        </div>
-                        <div class="d-flex justify-content-center mt-4">
-                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                <button type="button" class="btn btn-success">↑</button>
-                                <button type="button" class="btn btn-white">1</button>
-                                <button type="button" class="btn btn-danger">↓</button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-10">
-                        <div class="card-body">
-                            <h5><a href="...">Card title</a></h5>
-                            <div class="overflow-auto" style="height:150px;">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                deserunt mollit anim id est laborum.
-                            </div>
-                            <div class="d-flex justify-content-between">
-                                <a href="">Answers (44)</a>
-                                <div class="justify-content-start gap-3">
-                                    <span>Tags:</span>
-                                    <a href="...">Tag</a>
-                                    <a href="...">Tag</a>
-                                    <a href="...">Tag</a>
-                                    <a href="...">Tag</a>
-                                </div>
-
-
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {% include "layouts/pagination.html" %}
+{% include "layouts/pagination.html" %}
 {% endblock %}

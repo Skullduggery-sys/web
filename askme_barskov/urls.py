@@ -20,10 +20,12 @@ from django.urls import path
 from app import views
 
 urlpatterns = [
-    path('', views.index),
+    path('', views.index, name='index'),
     path('admin/', admin.site.urls),
-    path('signup', views.register),
-    path('login', views.login),
-    path('settings', views.settings),
-    path('tag', views.tag)
+    path('signup', views.register, name='signup'),
+    path('login', views.login, name='login'),
+    path('settings', views.settings, name='settings'),
+    path('tag', views.tag, name='tag'),
+    path('answers/<int:id>', views.answer, name='answers'),
+    path('ask', views.ask, name='ask')
 ]

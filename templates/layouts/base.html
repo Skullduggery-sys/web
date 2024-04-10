@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,12 +23,12 @@
 
         <div class="d-flex">
             <div>
-                <img src="./1.jpg" alt="">
+                <img src='{% static "ava.png" %}'  alt="">
             </div>
             <div class="div">
                 <div>Mike Voloshin</div>
                 <div>
-                    <a href="">Setting</a>
+                    <a href='{% url "settings" %}'>Setting</a>
                     <a href="">Log Out</a>
                 </div>
             </div>
