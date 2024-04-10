@@ -6,6 +6,7 @@ from django.http import HttpResponseBadRequest
 
 QUESTIONS = [
     {
+        "id" : i,
         "title": f"Question {i}",
         "text": f"HELP HELP HElP",
     } for i in range(100)
@@ -29,18 +30,6 @@ def get_page_number(request):
         raise InvalidPageNumber("Invalid page number")
 
     return number
-
-
-# def get_question_id(request):
-#     number = request.GET.get('page', 1)
-#     try:
-#         number = int(number)
-#         if number <= 0:
-#             raise InvalidPageNumber("Page number must be greater than 0")
-#     except ValueError:
-#         raise InvalidPageNumber("Invalid page number")
-#
-#     return number
 
 def paginate(objects, page, per_page=3):
     paginator = Paginator(objects, per_page)
