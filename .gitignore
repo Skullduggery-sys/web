@@ -3,6 +3,7 @@
 
 venv
 askme_venv
+.idea
 
 ### Django ###
 *.log
